@@ -45,6 +45,12 @@
     .nav2 li{
         font-size: 7px;
     }
+    /* MAIN */
+
+    /* no title effect on mobile*/
+    h3{
+        opacity: 1;
+    }
 
 }
 
