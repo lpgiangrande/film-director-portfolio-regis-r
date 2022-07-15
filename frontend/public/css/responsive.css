@@ -16,6 +16,9 @@
     }
     .nav1{
         letter-spacing: 2px;
+    }
+    .nav2 li{
+        font-size: 10px;
     } 
 }
 
@@ -38,6 +41,9 @@
     }
     .nav1{
         letter-spacing: 2px; 
+    }
+    .nav2 li{
+        font-size: 7px;
     }
 
 }

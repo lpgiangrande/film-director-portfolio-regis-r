@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 14px;
 }
 body {
     background-color : black;
@@ -13,15 +12,19 @@ h1, h2, h3, p, span{
     font-family: 'Roboto', sans-serif;
 }
 /* NAV */
-h1, h2 {
+h1, h2, h3 {
     text-transform: uppercase;
 }
 h2 {
     font-weight: 300;
     font-size: 25px;
 }
+h3{
+    font-weight: 300;
+    letter-spacing: 2px;
+    display: none;
+}
 .nav1, .nav2{
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -45,9 +48,9 @@ nav li a{
 li{
     list-style-type: none;
 }
-nav a:hover{
-    color:rgba(147, 183, 227, 0.851);
-}
+/* nav a:hover{
+    color:white;
+} */
 .current{
     color:rgba(147, 183, 227, 0.851);
 }
@@ -63,3 +66,33 @@ ul {
     padding: 0!important;
 }
 /* à revoir*/
+
+/* MAIN */
+.img-fluid:hover{
+    opacity: 0.5;
+    transition-duration: 2s;
+}
+.title{
+    position: relative;
+}
+h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 90;
+}
+
+/* FOOTER */
+footer .d-flex{
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+footer i{
+    opacity: 0.6;
+    margin: 8px;
+}
+footer i:hover{
+    opacity: 1;
+}
