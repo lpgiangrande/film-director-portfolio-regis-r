@@ -25,6 +25,12 @@
         <!--VUEJS-->
         <script src="https://unpkg.com/vue@3"></script>
         <!-- JS -->
+          <script>
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(navigator.userAgent);
+            const script = document.head.appendChild(document.createElement('script'))
+            if (!isMobile) script.async = 'async';
+            script.src = 'effects.js';
+        </script>
         
     </head>
     <body>
@@ -92,7 +98,7 @@
         </footer>
         <!-- JS -->
         <script src="menu.js"></script>
-        <script src="effects.js"></script>
+
         <!-- Bootstrap JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
